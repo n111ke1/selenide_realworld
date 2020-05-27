@@ -42,6 +42,7 @@ public class UserService extends BaseApiService {
                     .statusCode(200)
                     .extract().body()
                     .as(UserResponce.class).getUser();
+        newUser.setPassword(userData.getPassword());
     return newUser;
     }
 

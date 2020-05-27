@@ -44,7 +44,7 @@ public class AuthorizationUserTest extends BaseTest {
                 .clickSignIn();
         new SignInPage()
                 .login(userNew.getEmail(), userNew.getPassword());
-        assertThat(new HomePage().isUserLoggedIn(user.getUsername())).isTrue();
+        assertThat(new HomePage().isUserLoggedIn(userNew.getUsername())).isTrue();
 
     }
 
