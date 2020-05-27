@@ -1,0 +1,16 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke">
+
+    <listeners>
+        <listener class-name="listener.Listener"/>
+    </listeners>
+
+    <test name="Login">
+        <classes>
+            <class name="uiTests.AuthorizationUserTest"/>
+        </classes>
+    </test>
+
+</suite>

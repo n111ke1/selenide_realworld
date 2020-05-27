@@ -1,12 +1,13 @@
 package pages;
 
 import com.codeborne.selenide.Condition;
+import models.Article;
 import org.openqa.selenium.By;
 import sun.misc.BASE64Decoder;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class ArticleDetailsPage extends BasePage {
+public class ArticleDetailsPage extends Article {
     By createdPostName = By.cssSelector(".article-page .banner h1");
     By deletePostBtn = By.cssSelector("button.btn-outline-danger");
     By editPostBtn = By.cssSelector(".btn-outline-secondary");
