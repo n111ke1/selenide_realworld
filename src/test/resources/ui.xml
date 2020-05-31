@@ -1,11 +1,8 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Smoke">
+<suite name="Smoke UI">
 
-    <listeners>
-        <listener class-name="listener.Listener"/>
-    </listeners>
 
     <test name="Login">
         <classes>
@@ -14,3 +11,4 @@
     </test>
 
 </suite>
+
