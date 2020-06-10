@@ -1,8 +1,7 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Smoke UI">
-
+<suite name="Smoke_UI" parallel="methods" thread-count="${thread.count}">
 
     <test name="Login">
         <classes>
