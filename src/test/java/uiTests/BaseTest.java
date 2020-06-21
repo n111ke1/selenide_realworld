@@ -26,16 +26,16 @@ public class BaseTest {
                         .savePageSource(true)
                         .enableLogs(LogType.BROWSER, Level.INFO));
 
-//        switch (browserType) {
-//            case "chrome":
-//                Configuration.browser = ChromeDriverProvider.class.getName();
-//                break;
-//            case "firefox":
-//                Configuration.browser = FirefoxDriverProvider.class.getName();
-//                break;
-//            default:
-//                throw new IllegalArgumentException("Incorrect browse type");
-//        }
+        switch (browserType) {
+            case "chrome":
+                Configuration.browser = ChromeDriverProvider.class.getName();
+                break;
+            case "firefox":
+                Configuration.browser = FirefoxDriverProvider.class.getName();
+                break;
+            default:
+                throw new IllegalArgumentException("Incorrect browse type");
+        }
 
 //        Configuration.headless = true;
         Configuration.screenshots = true;
