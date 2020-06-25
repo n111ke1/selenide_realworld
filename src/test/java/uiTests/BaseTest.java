@@ -25,17 +25,18 @@ public class BaseTest {
                 new AllureSelenide().screenshots(true)
                         .savePageSource(true)
                         .enableLogs(LogType.BROWSER, Level.INFO));
+        Configuration.browser = ChromeDriverProvider.class.getName();
 
-        switch (browserType) {
-            case "chrome":
-                Configuration.browser = ChromeDriverProvider.class.getName();
-                break;
-            case "firefox":
-                Configuration.browser = FirefoxDriverProvider.class.getName();
-                break;
-            default:
-                throw new IllegalArgumentException("Incorrect browse type");
-        }
+//        switch (browserType) {
+//            case "chrome":
+//                Configuration.browser = ChromeDriverProvider.class.getName();
+//                break;
+//            case "firefox":
+//                Configuration.browser = FirefoxDriverProvider.class.getName();
+//                break;
+//            default:
+//                throw new IllegalArgumentException("Incorrect browse type");
+//        }
 
 //        Configuration.headless = true;
         Configuration.screenshots = true;

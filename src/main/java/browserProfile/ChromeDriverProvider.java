@@ -24,7 +24,7 @@ public class ChromeDriverProvider implements WebDriverProvider {
         WebDriver driver = null;
         try {
             driver = new RemoteWebDriver(
-                    URI.create("http://172.17.0.1:4444/wd/hub").toURL(), options);
+                    URI.create("http://selenoid:4444/").toURL(), options);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
