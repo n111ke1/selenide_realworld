@@ -40,7 +40,7 @@ public class BaseTest {
 
 //        Configuration.headless = true;
         Configuration.screenshots = true;
-        open(baseUrl);
+        open("https://react-redux.realworld.io/");
         return new MainPage().checkTittle();
     }
 
